@@ -1,0 +1,28 @@
+/* Variables de colores */
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+
+footer {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #343a40;
+    color: var(--color2);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+box-icon {
+    transition: transform 0.3s ease; /* Animación suave para la transformación */
+}
+
+box-icon:hover {
+    transform: scale(1.2);
+}

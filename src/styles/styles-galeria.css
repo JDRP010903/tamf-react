@@ -1,0 +1,57 @@
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+.containerTitleTxtGaleriaPage {
+    padding: 10px;
+    background-image: url("../assets/images/imagenesExtras/FondoDetalleProducto.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.TitletxtGaleriaPage {
+    background: linear-gradient(to right, #333, #212529, #000, #333);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movingGradient 3s linear infinite;
+    display: inline-block;
+}
+
+.ParrafoHeroTxtGaleriaPage {
+    color: black;
+    display: inline-block;
+}
+
+
+.SeccionImagenesGaleriaPage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.SeccionImagenesGaleriaPage col {
+    flex: 25%;
+    padding: 10px;
+}
+
+.SeccionImagenesGaleriaPage img {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.SeccionImagenesGaleriaPage video {
+    width: 100%;
+    margin-top: 7px;
+}

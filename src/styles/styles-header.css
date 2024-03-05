@@ -1,0 +1,44 @@
+/* Variables de colores */
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+header {
+    background-color: var(--color6);
+    padding: 10px;
+}
+
+.container {
+    color: #F0F0F0;
+}
+
+.navbar-custom {
+    background-color: var(--color6) !important;
+}
+
+.aLogoImg {
+    color: white;
+    text-decoration: none;
+}
+
+.logoImg {
+    max-height: 120px;
+    max-width: 100%;
+    animation: pulseFade 3s infinite;
+}
+
+@keyframes pulseFade {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}

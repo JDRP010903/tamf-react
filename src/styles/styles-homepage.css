@@ -1,0 +1,68 @@
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+.TitletxtHomePage {
+    font-size: 3vh;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    color: var(--color2) !important;
+}
+
+.div-izquierda {
+    animation: entrarDesdeLaIzquierda 1s ease-out forwards;
+}
+
+.div-derecha {
+    animation: entrarDesdeLaDerecha 1s ease-out forwards;
+}
+
+.sectionSobreNosotros img {
+    width: auto;
+    max-height: 250px;
+}
+
+.titleUbicacion {
+    margin-bottom: 15px;
+}
+
+/* Animaciones */
+@keyframes entrarDesdeLaIzquierda {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrarDesdeLaDerecha {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulseFade {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1;
+    }
+}

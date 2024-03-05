@@ -1,0 +1,17 @@
+/* Variables de colores */
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #343a40 !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--color2) !important;
+}

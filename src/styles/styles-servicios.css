@@ -1,0 +1,61 @@
+/* Variables de colores */
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+
+.containerTitleTxtServiciosPage {
+    padding: 10px;
+    background-image: url("../assets/images/imagenesExtras/FondoDetalleProducto.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.TitleTxtServiciosPage {
+    background: linear-gradient(to right, #333, #212529, #000, #333);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movingGradient 3s linear infinite;
+    display: inline-block;
+}
+
+.ParrafoHeroTxtServiciosPage {
+    color: black;
+    display: inline-block;
+}
+
+/* Tarjetas de servicios */
+.card {
+    border-color: var(--color1); /* Color del borde de las tarjetas */
+}
+
+.card-title {
+    color: var(--color1); /* Color del título de las tarjetas */
+}
+
+.card-body {
+    background-color: var(--color2);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color1) !important;
+    border-color: var(--color3) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--color3) !important;
+    border-color: var(--color1) !important;
+}

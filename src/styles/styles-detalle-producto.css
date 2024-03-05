@@ -1,0 +1,66 @@
+/* Variables de colores */
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+.containerTitleTxtDetalleProductoPage {
+    padding: 10px;
+    background-image: url("../assets/images/imagenesExtras/FondoDetalleProducto.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 17vh;
+}
+
+.TitletxtDetalleProductoPage {
+    background: linear-gradient(to right, #333, #212529, #000, #333);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: movingGradient 3s linear infinite;
+    display: inline-block;
+}
+
+.ParrafoHeroTxtDetalleProductoPage {
+    color: black;
+    display: inline-block;
+}
+
+.imagenMaquinariaDetalleProductoPage {
+    width: auto;
+    max-height: 250px;
+}
+
+.contenedorCardsDetalleProductoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body {
+    background-color: #F0F0F0;
+}
+
+.card .h-100 {
+    background-color: #F0F0F0;
+}
+
+.contenedorCardsDetalleProductoPage img {
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (min-width: 375px) {
+    .containerTitleTxtDetalleProductoPage {
+        height: 13vh;
+    }
+}

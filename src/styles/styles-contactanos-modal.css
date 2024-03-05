@@ -1,0 +1,23 @@
+:root {
+    --color1: #1e5a84;
+    --color2: #dce6ea;
+    --color3: #76a8cb;
+    --color4: #626261;
+    --color5: #727474;
+    --color6: #212529;
+}
+
+.modal {
+    color: var(--color6) !important;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color1);
+    border-color: var(--color3);
+}
+
+.btn-primary:hover {
+    background-color: var(--color3);
+    border-color: var(--color1);
+}
