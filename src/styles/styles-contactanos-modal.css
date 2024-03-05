@@ -21,3 +21,9 @@
     background-color: var(--color3);
     border-color: var(--color1);
 }
+
+.submit-success-message {
+    margin-top: 20px;
+    color: green;
+    text-align: center;
+}
