@@ -80,8 +80,8 @@ const DetalleProductoPage = () => {
                 </div>
 
                 <div className="carousel-item">
-                  <div className="card mx-auto imagenMaquinariaDetalleProductoPage" style={{ width: '18rem' }}>
-                    <img src={imagen6} className="card-img-top" alt="Torno Paralelo Grande" />
+                  <div className="card mx-auto" style={{ width: '18rem' }}>
+                    <img src={imagen6} className="card-img-top imagenMaquinariaDetalleProductoPage" alt="Torno Paralelo Grande" />
                     <div className="card-body">
                       <h5 className="card-title">Torno paralelo de 30 de volteo”</h5>
                       <p className="card-text">2” de paso de barra, 9” en Z y 10” de volteo.</p>
