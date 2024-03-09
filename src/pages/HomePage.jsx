@@ -15,7 +15,10 @@ const HomePage = () => {
             <img className="img-fluid" src={imagen1} alt="FotoTorno" />
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-center mt-2 mt-md-0 div-derecha text-center">
-            <h1 className="text-white TitletxtHomePage">Torneado Automático: Eficiencia, Precisión, Calidad</h1>
+            <div className="d-block">
+            <h1 className="text-white TitletxtHomePage">Torneado Automático Manuel Franco</h1>
+            <h1 className="text-white TitletxtHomePage">Eficiencia, Precisión, Calidad</h1>
+            </div>
           </div>
         </section>
       <br />

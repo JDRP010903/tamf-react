@@ -6,14 +6,24 @@ import imagen3 from "../assets/images/maquinaria/IMG_47530101.jpg"
 import imagen4 from "../assets/images/maquinaria/TORNO_REVOLVER.jpg"
 import imagen5 from "../assets/images/maquinaria/tornoParalelo.jpg"
 import imagen6 from "../assets/images/maquinaria/tornoParalelo30.jpg"
+import aceroInoxidableImg from "../assets/images/materiales/aceroInoxidable.jpeg"
+import acero12l14Img from "../assets/images/materiales/acero12l14.jpeg"
+import aceroAlCarbonImg from "../assets/images/materiales/aceroAlCarbon.jpeg"
+import plasticosDeIngenieriaImg from "../assets/images/materiales/plasticosDeIngenieria.jpeg"
+import aluminioImg from "../assets/images/materiales/aluminio.jpeg"
+import latonImg from "../assets/images/materiales/laton.jpeg"
+import bronceImg from "../assets/images/materiales/bronce.png"
+
 
 const DetalleProductoPage = () => {
   return (
     <>
       <main>
-        <section className="row col d-block mt-2 mt-md-0 text-center containerTitleTxtDetalleProductoPage text-center mb-4">
+        <section className="row d-block mx-auto my-auto mt-2 mt-md-0 text-center mb-4 containerTitleTxtDetalleProductoPage">
+          <div className="col d-block">
             <h1 className="TitletxtDetalleProductoPage">DETALLE DE PRODUCTO</h1>
             <p className="ParrafoHeroTxtDetalleProductoPage">Tú lo imaginas, nosotros lo hacemos realidad</p>
+          </div>
         </section>
 
         <section className="row mt-2 text-center">
@@ -102,21 +112,20 @@ const DetalleProductoPage = () => {
             </div>
           </section>
 
-          <section className="row mt-5 contenedorCardsDetalleProductoPage">
+          <section className="row mt-5 contenedorCardsDetalleProductoPage mx-auto">
             <h4 className="text-center">Materiales</h4>
-            <div className="row row-cols-1 row-cols-md-3 g-3 mt-0">
+            <div className="row row-cols-1 row-cols-md-3 g-3 mt-0" mx-auto>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://www.aceromafe.com/wp-content/uploads/2022/03/Redondo-12L14.jpg" className="card-img-top" alt="Acero 12L14" />
+                  <img src={acero12l14Img} className="card-img-top" alt="Acero 12L14" />
                   <div className="card-body">
                     <h5 className="card-title">Acero 12L14</h5>
-                    <p className="card-text">Breve descripción</p>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://inoxidablesvictoria.com/wp-content/uploads/2023/02/tubos-de-acero-al-carbon-estructural-y-mecanicos.jpg" className="card-img-top" alt="Acero al carbón" />
+                  <img src={aceroAlCarbonImg} className="card-img-top" alt="Acero al carbón" />
                   <div className="card-body">
                     <h5 className="card-title">Acero al carbón</h5>
                     <p className="card-text">1018, 1045, 4140, 4140 tratado, A36</p>
@@ -125,7 +134,7 @@ const DetalleProductoPage = () => {
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://metalcast.com.mx/wp-content/uploads/2020/12/Aceros-inoxidables_Mesa-de-trabajo-1-1024x768.png" className="card-img-top" alt="Aceros Inoxidables" />
+                  <img src={aceroInoxidableImg} className="card-img-top" alt="Aceros Inoxidables" />
                   <div className="card-body">
                     <h5 className="card-title">Aceros Inoxidables</h5>
                     <p className="card-text">Tipo 303, 304, 316</p>
@@ -134,43 +143,38 @@ const DetalleProductoPage = () => {
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://i0.wp.com/cameisa.com/wp-content/uploads/2021/02/cropped-producto_4-1.jpg?resize=940%2C940&ssl=1" className="card-img-top" alt="Plásticos de ingeniería" />
+                  <img src={plasticosDeIngenieriaImg} className="card-img-top" alt="Plásticos de ingeniería" />
                   <div className="card-body">
                     <h5 className="card-title">Plásticos de ingeniería</h5>
-                    <p className="card-text">Breve descripción</p>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://insul-therm.mx/insul/wp-content/uploads/2021/09/ROLLO-ALUMINIO.png" className="card-img-top" alt="Aluminio" />
+                  <img src={aluminioImg} className="card-img-top" alt="Aluminio" />
                   <div className="card-body">
                     <h5 className="card-title">Aluminio</h5>
-                    <p className="card-text">Breve descripción</p>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://www.mecanizadossinc.com/recurso/noticia/mecanizado_del_laton_propiedades_tipos_y_aplicaciones_okmaq3po9qoshc24sgip38tcwmaly86ueo0p7m6il0.jpg" className="card-img-top" alt="Latón" />
+                  <img src={latonImg} className="card-img-top" alt="Latón" />
                   <div className="card-body">
                     <h5 className="card-title">Latón</h5>
-                    <p className="card-text">Breve descripción</p>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card h-100">
-                  <img src="https://static1.s123-cdn-static-a.com/uploads/4735132/2000_5ff61fb64119d.jpg" className="card-img-top" alt="Bronce" />
+                  <img src={bronceImg} className="card-img-top" alt="Bronce" />
                   <div className="card-body">
                     <h5 className="card-title">Bronce</h5>
-                    <p className="card-text">Breve descripción</p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-
       </main>
     </>
   )

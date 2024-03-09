@@ -9,14 +9,13 @@
 
 .containerTitleTxtGaleriaPage {
     padding: 10px;
-    background-image: url("../assets/images/imagenesExtras/FondoDetalleProducto.png");
+    background-image: url("../assets/images/imagenesTrabajadas/fondoTitulosHero.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    display: flex;  
     justify-content: center;
     align-items: center;
-    height: 13vh;
+    height: auto;
 }
 
 .TitletxtGaleriaPage {
@@ -30,8 +29,11 @@
 }
 
 .ParrafoHeroTxtGaleriaPage {
-    color: black;
-    display: inline-block;
+    background: linear-gradient(to right, #212529, #000, #212529);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

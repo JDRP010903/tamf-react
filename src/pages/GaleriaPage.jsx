@@ -15,9 +15,11 @@ const GaleriaPage = () => {
   return (
     <>
       <main>
-        <section className="row col d-block mt-2 mt-md-0 text-center containerTitleTxtGaleriaPage text-center mb-4">
+        <section className="row d-block mx-auto my-auto mt-2 mt-md-0 text-center mb-4 containerTitleTxtGaleriaPage">
+          <div className="col d-block">
             <h1 className="TitletxtGaleriaPage">GALERÍA</h1>
             <p className="ParrafoHeroTxtGaleriaPage">Productos calidad y alta precisión</p>
+          </div>
         </section>
 
         <section className="row SeccionImagenesGaleriaPage">
