@@ -25,7 +25,7 @@ const ServiciosPage = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 col-lg-4 mb-4">
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
                     <div className="card">
                         <div className="card-body">
                             <h5 className="card-title text-center">Tuerca Hexagonal</h5>
@@ -36,136 +36,136 @@ const ServiciosPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Tuerca Latón</h5>
-                    </div>
-                    <img src={tuercaLaton} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Tuerca Latón</h5>
+                        </div>
+                        <img src={tuercaLaton} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Buje Roscado</h5>
-                    </div>
-                    <img src={bujeRoscado} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Buje Roscado</h5>
+                        </div>
+                        <img src={bujeRoscado} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Conector Tipo Bullet</h5>
-                    </div>
-                    <img src={conectorBullet} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Conector Tipo Bullet</h5>
+                        </div>
+                        <img src={conectorBullet} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Reducción</h5>
-                    </div>
-                    <img src={reduccion} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Reducción</h5>
+                        </div>
+                        <img src={reduccion} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Inserto</h5>
-                    </div>
-                    <img src={inserto} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Inserto</h5>
+                        </div>
+                        <img src={inserto} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Inserto</h5>
-                    </div>
-                    <img src={insertoM} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Inserto</h5>
+                        </div>
+                        <img src={insertoM} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Pieza Para Centrar</h5>
-                    </div>
-                    <img src={piezaCentar} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Pieza Para Centrar</h5>
+                        </div>
+                        <img src={piezaCentar} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Opresor Para Perno Interior</h5>
-                    </div>
-                    <img src={opresorPerno} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Opresor Para Perno Interior</h5>
+                        </div>
+                        <img src={opresorPerno} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Pata De Aluminio</h5>
-                    </div>
-                    <img src={pataAluminio} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Pata De Aluminio</h5>
+                        </div>
+                        <img src={pataAluminio} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Poste De Aluminio</h5>
-                    </div>
-                    <img src={posteAluminio} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Poste De Aluminio</h5>
+                        </div>
+                        <img src={posteAluminio} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div className="col-12 col-lg-4 mb-4">
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title text-center">Buje</h5>
-                    </div>
-                    <img src={buje} className="card-img-top" alt="Imagen Servicio 1" />
-                    <div className="card-text m-2 d-flex justify-content-center">
-                        <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                <div className="col-12 col-lg-6 col-xl-4 mb-4">
+                    <div className="card">
+                        <div className="card-body">
+                            <h5 className="card-title text-center">Buje</h5>
+                        </div>
+                        <img src={buje} className="card-img-top" alt="Imagen Servicio 1" />
+                        <div className="card-text m-2 d-flex justify-content-center">
+                            <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContactanos">Cotizar</button>
+                        </div>
                     </div>
                 </div>
             </div>
