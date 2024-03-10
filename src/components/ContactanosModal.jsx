@@ -44,6 +44,13 @@ const ContactanosModal = () => {
         }
     };
 
+    const resetCamposForm = () => {
+        setNombre("");
+        setCorreo("");
+        setTelefono("");
+        setMensaje("");
+    }
+
     const validarFormulario = () => {
         const nuevosErrores = {};
         // Validaciones simples como ejemplo, ajusta según tus necesidades
@@ -73,12 +80,12 @@ const ContactanosModal = () => {
         };
 
         try {
-            const response = await fetch('https://formsubmit.co/email', requestOptions);
+            const response = await fetch('https://formsubmit.co/compras@torneadomanuelfranco.com', requestOptions);
             if (response.ok) {
                 setSubmitSuccess(true); // Mostrar el mensaje de éxito
 
                 // Borrar los valores del formulario
-                form.reset();
+                resetCamposForm();
 
                 // Ocultar el mensaje de éxito después de 5 segundos
                 setTimeout(() => {
