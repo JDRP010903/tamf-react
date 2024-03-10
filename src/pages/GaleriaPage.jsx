@@ -10,6 +10,7 @@ import piezas7 from "../assets/images/imagenesTrabajadas/Piezas_07.jpg";
 import piezas8 from "../assets/images/imagenesTrabajadas/Piezas_08.jpg";
 import piezas9 from "../assets/images/imagenesTrabajadas/Piezas_09.jpg";
 import piezas10 from "../assets/images/imagenesTrabajadas/Piezas_10.jpg";
+import piezas11 from "../assets/images/imagenesTrabajadas/PiezasJuntas.jpg"
 
 const GaleriaPage = () => {
   return (
@@ -29,6 +30,7 @@ const GaleriaPage = () => {
             <img src={piezas3} alt="Piezas" />
             <img src={piezas4} alt="Piezas" />
             <img src={piezas5} alt="Piezas" />
+            <img src={piezas11} alt="Piezas"/>
           </div>
           <div className="col-12 col-md-6 g-1">
             <img src={piezas6} alt="Piezas" />

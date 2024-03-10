@@ -27,3 +27,8 @@
     color: green;
     text-align: center;
 }
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
