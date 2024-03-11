@@ -1,5 +1,10 @@
 import { useState } from 'react'
+import emailjs from 'emailjs-com';
 import "../styles/styles-contactanos-modal.css"
+
+const userID = import.meta.env.VITE_USER_ID;
+const serviceID = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
 
 
 const ContactanosModal = () => {
@@ -67,43 +72,43 @@ const ContactanosModal = () => {
         return Object.keys(nuevosErrores).length === 0; // Retorna true si no hay errores
     };
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        setIsSubmitting(true); // Inicia el estado de carga
+    // Función para manejar el envío del formulario
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevenir el envío predeterminado del formulario
 
-        const form = event.target;
-        const data = new FormData(form);
+        if (!validarFormulario()) return; // Validar el formulario antes del envío
 
-        const requestOptions = {
-            method: 'POST',
-            body: data,
-        };
+        setIsSubmitting(true); // Indicar que el envío está en proceso
 
-        try {
-            const response = await fetch('https://formsubmit.co/compras@torneadomanuelfranco.com', requestOptions);
-            if (response.ok) {
-                setSubmitSuccess(true); // Mostrar el mensaje de éxito
-
-                // Borrar los valores del formulario
-                resetCamposForm();
-
-                // Ocultar el mensaje de éxito después de 5 segundos
+        // Preparar los datos del formulario para EmailJS
+        const form = e.target;
+        
+        // Enviar el formulario usando EmailJS
+        emailjs.sendForm(
+            import.meta.env.VITE_SERVICE_ID,
+            import.meta.env.VITE_TEMPLATE_ID,
+            e.target,
+            import.meta.env.VITE_USER_ID
+            )
+            .then((result) => {
+                console.log(result.text);
+                // Manejar el éxito del envío
+                setSubmitSuccess(true); // Mostrar mensaje de éxito
+                resetCamposForm(); // Limpiar el formulario
+                
                 setTimeout(() => {
                     setSubmitSuccess(false);
-                }, 5000);
-            } else {
-                // Manejar respuesta no exitosa
-                alert('Hubo un problema al enviar el formulario.');
-            }
-        } catch (error) {
-            // Manejar errores de la petición
-            console.error('Error al enviar el formulario:', error);
-            alert('Error al enviar el formulario.');
-        } finally {
-            setIsSubmitting(false); // Detiene el estado de carga
-        }
+                }, 5000); // Ocultar mensaje de éxito después de 5 segundos
+            }, (error) => {
+                console.log(error.text);
+                // Manejar el error en el envío
+                alert('Error al enviar el formulario: ', error.text);
+            })
+            .finally(() => {
+                setIsSubmitting(false); // Restablecer el estado de envío
+            });
     };
-    
+
     
 
     return (
